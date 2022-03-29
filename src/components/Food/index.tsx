@@ -1,10 +1,18 @@
 import { useState } from 'react';
+import { FoodTypes } from '../../types';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
 import api from '../../services/api';
 
-export  const Food = ({food,handleDelete,handleEditFood})=>{
+interface FoodProps {
+  food:FoodTypes,
+  handleDelete: () => void
+  handleEditFood: () => void
+}
+
+
+export const Food = ({food,handleDelete,handleEditFood}:FoodProps): JSX.Element=>{
     const [isAvailable, setIsAvailable] = useState(food.available)
 
     const toggleAvailable = async () => {
@@ -17,10 +25,11 @@ export  const Food = ({food,handleDelete,handleEditFood})=>{
 
     const setEditingFood = () => {
   
-      handleEditFood(food);
+      // handleEditFood(food);
     }
   return(
-    <Container available={isAvailable}>
+    <>
+      <Container available={isAvailable}>
         <header>
           <img src={food.image} alt={food.name} />
         </header>
@@ -45,7 +54,7 @@ export  const Food = ({food,handleDelete,handleEditFood})=>{
             <button
               type="button"
               className="icon"
-              onClick={() => handleDelete(food.id)}
+              // onClick={() => handleDelete(food.id)}
               data-testid={`remove-food-${food.id}`}
             >
               <FiTrash size={20} />
@@ -68,6 +77,8 @@ export  const Food = ({food,handleDelete,handleEditFood})=>{
           </div>
         </section>
       </Container>
+    </>
+
   )
 
 }
