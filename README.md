@@ -1,4 +1,4 @@
-- [] src/components/Food/index.jsx;
+- [x] src/components/Food/index.jsx;
 - [] src/components/Food/styles.js;
 - [] src/components/Header/index.jsx;
 - [] src/components/Header/styles.js;

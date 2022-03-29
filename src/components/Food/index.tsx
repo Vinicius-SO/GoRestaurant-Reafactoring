@@ -7,8 +7,8 @@ import api from '../../services/api';
 
 interface FoodProps {
   food:FoodTypes,
-  handleDelete: () => void
-  handleEditFood: () => void
+  handleDelete: (food:number) => void
+  handleEditFood: (food: FoodTypes) => void
 }
 
 
@@ -25,7 +25,7 @@ export const Food = ({food,handleDelete,handleEditFood}:FoodProps): JSX.Element=
 
     const setEditingFood = () => {
   
-      // handleEditFood(food);
+      handleEditFood(food);
     }
   return(
     <>
@@ -54,7 +54,7 @@ export const Food = ({food,handleDelete,handleEditFood}:FoodProps): JSX.Element=
             <button
               type="button"
               className="icon"
-              // onClick={() => handleDelete(food.id)}
+              onClick={() => handleDelete(food.id)}
               data-testid={`remove-food-${food.id}`}
             >
               <FiTrash size={20} />
