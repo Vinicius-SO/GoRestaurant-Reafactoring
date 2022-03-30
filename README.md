@@ -1,9 +1,9 @@
 - [x] src/components/Food/index.jsx;
-- [] src/components/Food/styles.js;
-- [] src/components/Header/index.jsx;
-- [] src/components/Header/styles.js;
-- [] src/components/Input/index.jsx;
-- [] src/components/Input/styles.js;
+- [x] src/components/Food/styles.js;
+- [x] src/components/Header/index.jsx;
+- [x] src/components/Header/styles.js;
+- [x] src/components/Input/index.jsx;
+- [x] src/components/Input/styles.js;
 - [] src/components/Modal/index.jsx;
 - [] src/components/ModalAddFood/index.jsx;
 - [] src/components/ModalAddFood/styles.js;
