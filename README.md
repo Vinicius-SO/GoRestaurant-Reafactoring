@@ -9,10 +9,10 @@
 - [x] src/components/ModalAddFood/styles.js;
 - [x] src/components/ModalEditFood/index.jsx;
 - [x] src/components/ModalEditFood/styles.js;
-- [] src/pages/Dashboard/index.jsx;
-- [] src/pages/Dashboard/styles.js;
+- [x] src/pages/Dashboard/index.jsx;
+- [x] src/pages/Dashboard/styles.js;
 - [x] src/routes/index.jsx;
 - [x] src/services/api/index.js;
 - [x] src/styles/global.js;
 - [x] src/App.js;
-- [] src/index.js.
+- [x] src/index.js.
