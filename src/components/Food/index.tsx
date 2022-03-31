@@ -3,7 +3,7 @@ import { FoodTypes } from '../../types';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
-import api from '../../services/api';
+import api from '../../services/api/index';
 
 interface FoodProps {
   food:FoodTypes,
@@ -24,7 +24,6 @@ export const Food = ({food,handleDelete,handleEditFood}:FoodProps): JSX.Element=
     }
 
     const setEditingFood = () => {
-  
       handleEditFood(food);
     }
   return(
